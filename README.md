@@ -1,10 +1,8 @@
-# kjv [![AUR](https://img.shields.io/badge/AUR-kjv--git-blue.svg)](https://aur.archlinux.org/packages/kjv-git/)
 
-Read the Word of God from your terminal
 
 ## Usage
 
-    usage: ./kjv [flags] [reference...]
+    usage: ./ved [flags] [reference...]
 
       -l      list books
       -W      no line wrap
