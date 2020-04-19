@@ -33,7 +33,7 @@
 
 kjv can be built by cloning the repository and then running make:
 
-    git clone https://github.com/bontibon/kjv.git
+    git clone https://github.com/ragomen/ved.git
     cd kjv
     make
 
