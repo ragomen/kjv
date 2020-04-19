@@ -31,10 +31,10 @@
 
 ## Build
 
-kjv can be built by cloning the repository and then running make:
+ved can be built by cloning the repository and then running make:
 
     git clone https://github.com/ragomen/ved.git
-    cd kjv
+    cd ved
     make
 
 ## License
