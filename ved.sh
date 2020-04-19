@@ -1,5 +1,5 @@
 #!/bin/sh
-# kjv: Read the Word of God from your terminal
+# ved: Read the Word of God from your terminal
 # License: Public domain
 
 SELF="$0"
@@ -59,7 +59,7 @@ while [ $# -gt 0 ]; do
 		break
 	elif [ "$1" = "-l" ]; then
 		# List all book names with their abbreviations
-		get_data kjv.tsv | awk -v cmd=list "$(get_data kjv.awk)"
+		get_data ved.tsv | awk -v cmd=list "$(get_data ved.awk)"
 		exit
 	elif [ "$1" = "-W" ]; then
 		export KJV_NOLINEWRAP=1
@@ -83,13 +83,13 @@ if [ $# -eq 0 ]; then
 
 	# Interactive mode
 	while true; do
-		printf "kjv> "
+		printf "ved> "
 		if ! read -r ref; then
 			break
 		fi
-		get_data kjv.tsv | awk -v cmd=ref -v ref="$ref" "$(get_data kjv.awk)" | ${PAGER}
+		get_data ved.tsv | awk -v cmd=ref -v ref="$ref" "$(get_data ved.awk)" | ${PAGER}
 	done
 	exit 0
 fi
 
-get_data kjv.tsv | awk -v cmd=ref -v ref="$*" "$(get_data kjv.awk)" | ${PAGER}
+get_data ved.tsv | awk -v cmd=ref -v ref="$*" "$(get_data ved.awk)" | ${PAGER}
